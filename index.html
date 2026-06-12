@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harith Haikal Bin Mohd Khairi — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<!-- TOP BAR -->
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">HH</span>
+    <span class="brand-cursor">_</span>
+  </div>
+  <nav class="nav-menu" aria-label="Section navigation">
+    <button class="nav-btn" data-target="profile"><span class="nav-num">01</span>Profile</button>
+    <button class="nav-btn" data-target="career"><span class="nav-num">02</span>Career Path</button>
+    <button class="nav-btn" data-target="skills"><span class="nav-num">03</span>Skills</button>
+    <button class="nav-btn" data-target="plan"><span class="nav-num">04</span>Dev Plan</button>
+    <button class="nav-btn" data-target="evidence"><span class="nav-num">05</span>Evidence</button>
+    <button class="nav-btn" data-target="reflection"><span class="nav-num">06</span>Reflection</button>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- HERO / LANDING -->
+<main class="hero">
+  <div class="hero-photo">
+    <div class="photo-frame">
+      <img src="images/profile.jpg" alt="Harith Haikal Bin Mohd Khairi">
+      <div class="frame-corner tl"></div>
+      <div class="frame-corner br"></div>
+      <span class="photo-tag">// status: open_to_work</span>
+    </div>
+  </div>
+
+  <div class="hero-text">
+    <p class="eyebrow">root@portfolio:~$ whoami</p>
+    <h1 class="hero-name">HARITH HAIKAL<br><span>BIN MOHD KHAIRI</span></h1>
+    <p class="hero-role">Bachelor of Computer Science <br class="mobile-break">(Computer Network Security) with Honours</p>
+    <p class="hero-school">Universiti Sultan Zainal Abidin · UniSZA</p>
+    <div class="hero-actions">
+      <button class="btn-primary" data-target="profile">Open Profile</button>
+      <button class="btn-ghost" data-target="evidence">View Evidence</button>
+    </div>
+  </div>
+</main>
+
+<!-- STATUS BAR -->
+<footer class="statusbar">
+  <span class="status-item"><span class="status-dot"></span>AVAILABLE FOR OPPORTUNITIES</span>
+  <span class="status-item">PEKAN, PAHANG, MALAYSIA</span>
+  <span class="status-item">CGPA 3.10 // UNISZA</span>
+</footer>
+
+<!-- OVERLAY -->
+<div class="overlay" id="overlay">
+
+  <!-- 01 PROFILE -->
+  <section class="window" id="profile" role="dialog" aria-modal="true" aria-label="Profile">
+    <div class="window-bar">
+      <div class="window-dots"><span></span><span></span><span></span></div>
+      <span class="window-title">01_profile.sh</span>
+      <button class="window-close" data-close>✕</button>
+    </div>
+    <div class="window-body">
+      <div class="profile-grid">
+        <div class="profile-photo">
+          <img src="images/profile.jpg" alt="Harith Haikal Bin Mohd Khairi">
+        </div>
+        <div class="profile-info">
+          <h2>Harith Haikal Bin Mohd Khairi</h2>
+          <p class="profile-tagline">Computer Network Security student aiming for a career in network security operations.</p>
+
+          <div class="info-row"><span class="info-label">Location</span><span>Pekan, Pahang, Malaysia</span></div>
+          <div class="info-row"><span class="info-label">Email</span><span>079505@putra.unisza.edu.my</span></div>
+          <div class="info-row"><span class="info-label">Phone</span><span>013-424 1247</span></div>
+          <div class="info-row"><span class="info-label">Languages</span><span>Malay (Native), English (Proficient), Arabic (Basic)</span></div>
+
+          <h3 class="sub-heading">Objective</h3>
+          <p>To secure an employment opportunity where I can apply the knowledge and skills gained throughout my studies in computer network security. I am keen on gaining practical, real-world experience, sharpening my technical and communication skills, and contributing positively to an organisation. I work well under pressure, manage my time effectively, and am a committed team player.</p>
+
+          <h3 class="sub-heading">Education</h3>
+          <ul class="timeline-list">
+            <li><strong>Bachelor of Computer Science (Computer Network Security) with Honours</strong> — Universiti Sultan Zainal Abidin (UniSZA), 2023–Present, CGPA 3.10</li>
+            <li><strong>Malaysian Higher School Certificate (STPM)</strong> — SMK Dato' Mahmud Mat, Pahang, 2021–2023, PNGK 2.59 / MUET Band 3.0</li>
+            <li><strong>Malaysian Certificate of Education (SPM)</strong> — SMK Indera Shahbandar, Pahang, 2016–2021 (1A 3B 2C)</li>
+          </ul>
+
+          <h3 class="sub-heading">Leadership &amp; Activities</h3>
+          <ul class="timeline-list">
+            <li><strong>President, Kadet Koreksional</strong> (2019–2021) — led the unit, managed activities and organised events</li>
+            <li><strong>Secretary, English Language Club</strong> (2019–2021) — maintained meeting minutes, organised documents and handled tasks</li>
+            <li><strong>Hackathon High School Club</strong> (2019–2021) — learned Python coding, worked in a team, practised time management</li>
+          </ul>
+
+          <h3 class="sub-heading">Awards</h3>
+          <ul class="chip-list">
+            <li>Pahang National Hackathon (2019)</li>
+            <li>Game Development Workshop (2019)</li>
+            <li>Karnival Literasi Falak (2018)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 CAREER EXPLORATION -->
+  <section class="window" id="career" role="dialog" aria-modal="true" aria-label="Career Exploration">
+    <div class="window-bar">
+      <div class="window-dots"><span></span><span></span><span></span></div>
+      <span class="window-title">02_career_exploration.sh</span>
+      <button class="window-close" data-close>✕</button>
+    </div>
+    <div class="window-body">
+      <p class="eyebrow small">// target_role</p>
+      <h2>SOC Analyst <span class="muted">(Security Operations Center Analyst)</span></h2>
+
+      <p>I chose the SOC Analyst role because it sits at the intersection of everything I have been building toward in my degree — networking fundamentals, packet-level analysis, digital forensics, and basic offensive-security tooling. It is a realistic entry point for a fresh graduate in network security, and it gives me a foundation to later specialise in cloud security or incident response.</p>
+
+      <h3 class="sub-heading">Job Responsibilities</h3>
+      <ul class="check-list">
+        <li>Monitor network traffic, logs and SIEM alerts to detect unusual or malicious activity</li>
+        <li>Perform first-level (Tier 1) triage on security alerts and escalate confirmed incidents to senior analysts</li>
+        <li>Analyse packet captures (e.g. with Wireshark) to understand the nature of suspicious traffic</li>
+        <li>Run basic vulnerability scans (e.g. with Nmap) and document findings</li>
+        <li>Maintain incident reports and update standard operating procedures</li>
+        <li>Support patching, configuration checks, and network device troubleshooting</li>
+      </ul>
+
+      <h3 class="sub-heading">Required Skills</h3>
+      <div class="tag-grid">
+        <span class="tag">TCP/IP &amp; Networking</span>
+        <span class="tag">Routing &amp; Switching</span>
+        <span class="tag">Wireshark / Packet Analysis</span>
+        <span class="tag">Linux (Kali)</span>
+        <span class="tag">Python Scripting</span>
+        <span class="tag">SIEM Tools</span>
+        <span class="tag">Vulnerability Scanning</span>
+        <span class="tag">Incident Documentation</span>
+        <span class="tag">Communication</span>
+      </div>
+
+      <h3 class="sub-heading">Relevance to Modern Cybersecurity</h3>
+      <p>Every organisation that runs a network — banks, telcos, government agencies, e-commerce platforms — now needs people watching that network around the clock. The SOC Analyst role is the front line of that defence: the first person to notice when something looks wrong. With cyberattacks in Malaysia and globally increasing every year, demand for SOC analysts continues to grow, and it is widely recognised as one of the most accessible entry points into a long-term cybersecurity career, with a clear path toward roles such as Incident Responder, Threat Hunter, or Cloud Security Engineer.</p>
+    </div>
+  </section>
+
+  <!-- 03 SKILLS ASSESSMENT -->
+  <section class="window" id="skills" role="dialog" aria-modal="true" aria-label="Skills Assessment">
+    <div class="window-bar">
+      <div class="window-dots"><span></span><span></span><span></span></div>
+      <span class="window-title">03_skills_assessment.sh</span>
+      <button class="window-close" data-close>✕</button>
+    </div>
+    <div class="window-body">
+      <p class="eyebrow small">// self_evaluation</p>
+
+      <h3 class="sub-heading">Current Technical Skills</h3>
+      <div class="tag-grid">
+        <span class="tag">Networking (IP, Routing, Switching) — Cisco Networking Academy</span>
+        <span class="tag">Wireshark</span>
+        <span class="tag">Nmap</span>
+        <span class="tag">Burp Suite</span>
+        <span class="tag">Kali Linux</span>
+        <span class="tag">FTK / Autopsy</span>
+        <span class="tag">Python</span>
+        <span class="tag">Java</span>
+        <span class="tag">SQL</span>
+        <span class="tag">VS Code / Jupyter Notebook</span>
+        <span class="tag">Arduino / IoT (ESP8266, Blynk)</span>
+      </div>
+
+      <h3 class="sub-heading">Soft Skills</h3>
+      <div class="tag-grid">
+        <span class="tag">Leadership — President, Kadet Koreksional</span>
+        <span class="tag">Communication &amp; Documentation — Secretary, English Language Club</span>
+        <span class="tag">Teamwork — Hackathon Club &amp; Group Projects</span>
+        <span class="tag">Time Management &amp; Multitasking — Part-time work</span>
+        <span class="tag">Integrity, Adaptability &amp; Fast Learning</span>
+      </div>
+
+      <h3 class="sub-heading">Current Skills vs SOC Analyst Requirements</h3>
+      <div class="table-wrap">
+        <table class="skills-table">
+          <thead>
+            <tr><th>Area</th><th>My Current Level</th><th>Industry Requirement</th><th>Gap / Action</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Networking fundamentals</td><td>Solid foundation (Cisco Networking Academy: IP, routing, switching, troubleshooting)</td><td>CCNA-level knowledge expected</td><td>Sit for CCNA certification</td></tr>
+            <tr><td>Packet analysis</td><td>Used Wireshark for coursework / forensics exercises</td><td>Confident daily use to spot anomalies</td><td>Practise with public PCAP datasets weekly</td></tr>
+            <tr><td>SIEM tools</td><td>No hands-on exposure yet</td><td>Familiarity with Splunk / QRadar / similar</td><td>Complete a free SIEM fundamentals course (e.g. Splunk Free)</td></tr>
+            <tr><td>Security certification</td><td>None yet</td><td>CompTIA Security+ commonly required</td><td>Study and sit for Security+ within final year</td></tr>
+            <tr><td>Scripting / automation</td><td>Basic Python, Java, SQL (used in projects)</td><td>Scripting for log parsing &amp; automation</td><td>Build small Python scripts for log analysis</td></tr>
+            <tr><td>Linux command line</td><td>Exposure via Kali Linux for security tools</td><td>Comfortable daily CLI usage</td><td>Practise CLI tasks regularly, not just GUI tools</td></tr>
+            <tr><td>Communication &amp; reporting</td><td>Strong — leadership &amp; secretarial experience</td><td>Clear incident write-ups for non-technical readers</td><td>Maintain this strength; apply it to lab reports</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 DEVELOPMENT PLAN -->
+  <section class="window" id="plan" role="dialog" aria-modal="true" aria-label="Career Development Plan">
+    <div class="window-bar">
+      <div class="window-dots"><span></span><span></span><span></span></div>
+      <span class="window-title">04_development_plan.sh</span>
+      <button class="window-close" data-close>✕</button>
+    </div>
+    <div class="window-body">
+      <p class="eyebrow small">// roadmap</p>
+
+      <h3 class="sub-heading">Certifications</h3>
+      <div class="tag-grid">
+        <span class="tag tag-priority">CompTIA Security+ <em>(priority)</em></span>
+        <span class="tag">Cisco CCNA</span>
+        <span class="tag">AWS Certified Cloud Practitioner</span>
+        <span class="tag">CySA+ / CEH <em>(long-term)</em></span>
+      </div>
+
+      <h3 class="sub-heading">Tools to Strengthen / Learn</h3>
+      <div class="tag-grid">
+        <span class="tag">Wireshark — deepen daily-use proficiency</span>
+        <span class="tag">Splunk (SIEM)</span>
+        <span class="tag">Kali Linux — command-line workflows</span>
+        <span class="tag">Python — security automation scripts</span>
+        <span class="tag">Burp Suite — web application testing</span>
+      </div>
+
+      <h3 class="sub-heading">Timeline</h3>
+      <div class="terminal-log">
+        <div class="log-line"><span class="log-time">2026</span><span class="log-text"><strong>Final year, UniSZA.</strong> Complete degree, sit for CompTIA Security+, build a personal lab for SIEM &amp; packet-analysis practice.</span></div>
+        <div class="log-line"><span class="log-time">2026 →</span><span class="log-text"><strong>Graduation.</strong> Apply for SOC Analyst (Tier 1) / IT Support with Security responsibilities / cybersecurity internship.</span></div>
+        <div class="log-line"><span class="log-time">+2 yrs</span><span class="log-text"><strong>SOC Analyst (Tier 1–2).</strong> CCNA certified, hands-on SIEM experience, contributing to real incident response cases.</span></div>
+        <div class="log-line"><span class="log-time">+5 yrs</span><span class="log-text"><strong>Network / Cloud Security Analyst.</strong> CySA+ or CCNP Security in progress, mentoring junior analysts, specialising toward cloud security engineering.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 EVIDENCE -->
+  <section class="window" id="evidence" role="dialog" aria-modal="true" aria-label="Evidence of Learning">
+    <div class="window-bar">
+      <div class="window-dots"><span></span><span></span><span></span></div>
+      <span class="window-title">05_evidence_of_learning.sh</span>
+      <button class="window-close" data-close>✕</button>
+    </div>
+    <div class="window-body">
+      <p class="eyebrow small">// projects_courses_certificates</p>
+      <p>A working selection from my courses, certifications and personal projects — including Cisco Networking Academy training, network packet analysis with Wireshark, an IoT smart repetition counter, and an Android spam-detection app.</p>
+      <div class="evidence-grid">
+        <div class="evidence-item"><img src="images/evidence-01.jpg" alt="Evidence of project work"></div>
+        <div class="evidence-item"><img src="images/evidence-02.jpg" alt="Evidence of project work"></div>
+        <div class="evidence-item"><img src="images/evidence-03.jpg" alt="Evidence of project work"></div>
+        <div class="evidence-item"><img src="images/evidence-04.jpg" alt="Evidence of project work"></div>
+        <div class="evidence-item"><img src="images/evidence-05.jpg" alt="Evidence of project work"></div>
+        <div class="evidence-item"><img src="images/evidence-06.jpg" alt="Evidence of project work"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 REFLECTION -->
+  <section class="window" id="reflection" role="dialog" aria-modal="true" aria-label="Personal Reflection">
+    <div class="window-bar">
+      <div class="window-dots"><span></span><span></span><span></span></div>
+      <span class="window-title">06_reflection.sh</span>
+      <button class="window-close" data-close>✕</button>
+    </div>
+    <div class="window-body">
+      <p class="eyebrow small">// dream_company: cybersecurity_malaysia</p>
+      <h2>CyberSecurity Malaysia</h2>
+      <p>CyberSecurity Malaysia is the national agency responsible for protecting Malaysia's critical information infrastructure. As someone who chose to specialise in Network Security, working here would mean contributing directly to the country's digital safety — not just to a company's bottom line.</p>
+
+      <div class="qa-block">
+        <h3 class="sub-heading">Why do you want to work for this company?</h3>
+        <p>Because the work has a clear national purpose. CyberSecurity Malaysia handles real incident response, digital forensics and security awareness at a national scale — areas I have already been introduced to through my degree (digital forensics with FTK/Autopsy, network analysis with Wireshark, and Cisco networking training). I want to grow in an environment where my work directly protects Malaysian organisations and citizens.</p>
+
+        <h3 class="sub-heading">What value can you bring to this company?</h3>
+        <p>I bring a solid networking and forensics foundation from Cisco Networking Academy and my coursework, hands-on project experience (an IoT-based smart repetition counter and an Android spam-detection app), and a habit of finishing what I start. I am also used to documenting and presenting work clearly — a skill built from years of taking meeting minutes and handling administrative tasks as a club secretary.</p>
+
+        <h3 class="sub-heading">Why should we hire you?</h3>
+        <p>Because I am a fast learner who takes ownership. As President of Kadet Koreksional, I was responsible for leading a unit and organising events — that taught me to follow through under pressure. Combined with my technical foundation in networking, forensics and basic security tooling, I am ready to be trained into a productive SOC-level analyst quickly.</p>
+
+        <h3 class="sub-heading">What skills make you suitable for this job?</h3>
+        <p>Networking fundamentals (IP addressing, routing, switching, troubleshooting), exposure to security and forensics tools (Nmap, Burp Suite, Kali Linux, FTK, Autopsy, Wireshark), basic programming (Python, Java, SQL) for automation and analysis, and communication skills built through leadership and secretarial roles.</p>
+
+        <h3 class="sub-heading">What are your strengths and weaknesses?</h3>
+        <p><strong>Strengths:</strong> integrity and honesty, a positive attitude, fast learning, and emotional intelligence — qualities I rely on whether I'm leading a unit or working in a fast-paced part-time job.</p>
+        <p><strong>Weaknesses:</strong> I do not yet hold an industry security certification (Security+ or CCNA) and my hands-on professional experience so far has been outside the IT field. I am addressing both directly — by studying for Security+ during my final year and by building personal lab projects to gain practical, IT-relevant experience before I graduate.</p>
+
+        <h3 class="sub-heading">Why would a company choose to hire you?</h3>
+        <p>Because I combine a real technical foundation with a track record of reliability — shown through part-time jobs, leadership roles, and self-driven projects completed outside of class requirements. I am honest about what I don't know yet, and I actively work to close those gaps rather than wait to be told.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
