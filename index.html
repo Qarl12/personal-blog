@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Harith Haikal | Network Security Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ===== HERO / LANDING ===== -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-photo-wrap">
+        <img src="assets/img/profile.jpg" alt="Harith Haikal" class="hero-photo" />
+        <div class="hero-photo-ring"></div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-eyebrow">👋 Welcome to my portfolio</p>
+        <h1 class="hero-name">Harith Haikal<br><span>Bin Mohd Khairi</span></h1>
+        <p class="hero-course">Bachelor of Computer Science (Computer Network Security) With Honours<br>
+          <span class="hero-uni">Universiti Sultan Zainal Abidin (UniSZA)</span>
+        </p>
+        <p class="hero-tagline">Aspiring Network Security Analyst · CGPA 3.10</p>
+        <button class="hero-cta" onclick="openSection('career')">Explore My Portfolio <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <!-- NAV TABS -->
+    <nav class="tab-nav">
+      <button class="tab-btn" data-section="career" onclick="openSection('career')">
+        <i class="fas fa-briefcase"></i><span>Career</span>
+      </button>
+      <button class="tab-btn" data-section="skills" onclick="openSection('skills')">
+        <i class="fas fa-code"></i><span>Skills</span>
+      </button>
+      <button class="tab-btn" data-section="plan" onclick="openSection('plan')">
+        <i class="fas fa-road"></i><span>Dev Plan</span>
+      </button>
+      <button class="tab-btn" data-section="evidence" onclick="openSection('evidence')">
+        <i class="fas fa-folder-open"></i><span>Evidence</span>
+      </button>
+      <button class="tab-btn" data-section="reflection" onclick="openSection('reflection')">
+        <i class="fas fa-lightbulb"></i><span>Reflection</span>
+      </button>
+    </nav>
+  </section>
+
+  <!-- ===== MODAL OVERLAY ===== -->
+  <div id="modal-overlay" class="modal-overlay" onclick="closeSection()"></div>
+
+  <!-- ===== SECTION: CAREER ===== -->
+  <div id="modal-career" class="modal-panel">
+    <div class="modal-inner">
+      <button class="modal-close" onclick="closeSection()"><i class="fas fa-times"></i></button>
+      <div class="modal-header">
+        <span class="modal-icon"><i class="fas fa-shield-halved"></i></span>
+        <h2>Career Exploration</h2>
+        <p class="modal-sub">Network Security Analyst</p>
+      </div>
+      <div class="modal-body">
+        <div class="card-grid">
+          <div class="info-card">
+            <h3><i class="fas fa-tasks"></i> Job Responsibilities</h3>
+            <ul>
+              <li>Monitor and analyse network traffic for suspicious activity and intrusions</li>
+              <li>Conduct vulnerability assessments and penetration testing</li>
+              <li>Respond to security incidents and perform forensic investigations</li>
+              <li>Design and implement firewalls, IDS/IPS, and VPN solutions</li>
+              <li>Develop and enforce security policies and compliance standards</li>
+              <li>Prepare detailed security reports and recommendations for stakeholders</li>
+            </ul>
+          </div>
+          <div class="info-card">
+            <h3><i class="fas fa-star"></i> Required Skills</h3>
+            <ul>
+              <li>Proficiency in network protocols (TCP/IP, DNS, HTTP/S, SMTP)</li>
+              <li>Experience with SIEM tools (Splunk, IBM QRadar)</li>
+              <li>Knowledge of ethical hacking and penetration testing</li>
+              <li>Scripting skills in Python, Bash, or PowerShell</li>
+              <li>Certifications: CompTIA Security+, CEH, CISSP</li>
+              <li>Strong analytical and problem-solving mindset</li>
+            </ul>
+          </div>
+          <div class="info-card full-width">
+            <h3><i class="fas fa-globe"></i> Relevance to Modern Cybersecurity</h3>
+            <p>
+              In an era where cyber threats evolve daily — from ransomware attacks targeting critical infrastructure 
+              to state-sponsored espionage — the role of a Network Security Analyst has never been more vital. 
+              Malaysia's digital economy growth, driven by initiatives like MyDIGITAL and the National Cybersecurity 
+              Strategy (NACSA), has amplified demand for skilled defenders. Organisations like CyberSecurity Malaysia 
+              (CSM) sit at the frontline of this challenge. A Network Security Analyst bridges technical expertise 
+              with strategic defence, protecting both data assets and public trust — making it one of the most 
+              impactful and future-proof careers in IT.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SECTION: SKILLS ===== -->
+  <div id="modal-skills" class="modal-panel">
+    <div class="modal-inner">
+      <button class="modal-close" onclick="closeSection()"><i class="fas fa-times"></i></button>
+      <div class="modal-header">
+        <span class="modal-icon"><i class="fas fa-code"></i></span>
+        <h2>Personal Skills Assessment</h2>
+        <p class="modal-sub">Current abilities vs industry requirements</p>
+      </div>
+      <div class="modal-body">
+        <div class="skills-section">
+          <h3 class="skills-cat">Technical Skills</h3>
+          <div class="skill-bars">
+            <div class="skill-item">
+              <div class="skill-label"><span>Wireshark / Network Analysis</span><span class="skill-tag have">Have</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>Kali Linux / NMAP / Burp Suite</span><span class="skill-tag have">Have</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>Digital Forensics (FTK, Autopsy)</span><span class="skill-tag have">Have</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>Python / Java / SQL</span><span class="skill-tag have">Have</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>Machine Learning (Random Forest, ONNX)</span><span class="skill-tag have">Have</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>Android Development (Kotlin, Jetpack Compose)</span><span class="skill-tag have">Have</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>SIEM Tools (Splunk, QRadar)</span><span class="skill-tag gap">Gap</span></div>
+              <div class="skill-bar"><div class="skill-fill gap-fill" style="width:20%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-label"><span>Cloud Security (AWS/Azure)</span><span class="skill-tag gap">Gap</span></div>
+              <div class="skill-bar"><div class="skill-fill gap-fill" style="width:15%"></div></div>
+            </div>
+          </div>
+
+          <h3 class="skills-cat" style="margin-top:2rem">Soft Skills</h3>
+          <div class="soft-skills-grid">
+            <div class="soft-card"><i class="fas fa-users"></i><span>Teamwork</span></div>
+            <div class="soft-card"><i class="fas fa-crown"></i><span>Leadership</span></div>
+            <div class="soft-card"><i class="fas fa-clock"></i><span>Time Management</span></div>
+            <div class="soft-card"><i class="fas fa-comments"></i><span>Communication</span></div>
+            <div class="soft-card"><i class="fas fa-bolt"></i><span>Fast Learner</span></div>
+            <div class="soft-card"><i class="fas fa-heart"></i><span>Emotional Intelligence</span></div>
+          </div>
+
+          <div class="gap-summary">
+            <h3><i class="fas fa-exclamation-triangle"></i> Skills Gap Summary</h3>
+            <p>Currently lacking hands-on experience with enterprise SIEM platforms and cloud security environments. Plan to address through CompTIA Security+ certification and self-study on TryHackMe and AWS Cloud Practitioner course within the next 12 months.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SECTION: CAREER DEV PLAN ===== -->
+  <div id="modal-plan" class="modal-panel">
+    <div class="modal-inner">
+      <button class="modal-close" onclick="closeSection()"><i class="fas fa-times"></i></button>
+      <div class="modal-header">
+        <span class="modal-icon"><i class="fas fa-road"></i></span>
+        <h2>Career Development Plan</h2>
+        <p class="modal-sub">My roadmap from student to security professional</p>
+      </div>
+      <div class="modal-body">
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot current"></div>
+            <div class="tl-content">
+              <div class="tl-period">Now – 2025 (Short-Term)</div>
+              <h4>Complete Final Year &amp; Foundation</h4>
+              <ul>
+                <li>Graduate with Bachelor of CS (Network Security) from UniSZA</li>
+                <li>Complete FYP: Real-Time SMS Spam Detection Android App (Random Forest ML)</li>
+                <li>Obtain <strong>CompTIA Security+</strong> certification</li>
+                <li>Continue building skills on <strong>TryHackMe</strong> and <strong>HackTheBox</strong></li>
+                <li>Tools: Wireshark, NMAP, Burp Suite, Kali Linux, Python</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <div class="tl-period">2025 – 2026</div>
+              <h4>Entry-Level Role &amp; Certification Growth</h4>
+              <ul>
+                <li>Secure Junior Network Security Analyst position (target: <strong>CyberSecurity Malaysia</strong>)</li>
+                <li>Obtain <strong>Cisco CCNA</strong> certification</li>
+                <li>Gain exposure to SIEM tools and SOC operations</li>
+                <li>Begin AWS Cloud Practitioner / Azure Fundamentals</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <div class="tl-period">2026 – 2028 (Mid-Term)</div>
+              <h4>Specialisation &amp; Advanced Certifications</h4>
+              <ul>
+                <li>Earn <strong>CEH (Certified Ethical Hacker)</strong> or <strong>OSCP</strong></li>
+                <li>Lead penetration testing engagements</li>
+                <li>Contribute to national cybersecurity initiatives</li>
+                <li>Mentor junior analysts within the team</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <div class="tl-period">2028 – 2030 (Long-Term)</div>
+              <h4>Senior Analyst / Security Architect</h4>
+              <ul>
+                <li>Achieve <strong>CISM (Certified Information Security Manager)</strong></li>
+                <li>Take on Senior Security Analyst or Security Architect role</li>
+                <li>Drive enterprise-level security strategy and policy</li>
+                <li>Contribute to Malaysia's national cyber defence ecosystem</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-roadmap">
+          <h3><i class="fas fa-certificate"></i> Certification Roadmap</h3>
+          <div class="cert-track">
+            <div class="cert-box active">Security+</div>
+            <div class="cert-arrow"><i class="fas fa-chevron-right"></i></div>
+            <div class="cert-box">CCNA</div>
+            <div class="cert-arrow"><i class="fas fa-chevron-right"></i></div>
+            <div class="cert-box">CEH / OSCP</div>
+            <div class="cert-arrow"><i class="fas fa-chevron-right"></i></div>
+            <div class="cert-box">CISM</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SECTION: EVIDENCE ===== -->
+  <div id="modal-evidence" class="modal-panel">
+    <div class="modal-inner">
+      <button class="modal-close" onclick="closeSection()"><i class="fas fa-times"></i></button>
+      <div class="modal-header">
+        <span class="modal-icon"><i class="fas fa-folder-open"></i></span>
+        <h2>Evidence of Learning</h2>
+        <p class="modal-sub">Projects, courses &amp; achievements</p>
+      </div>
+      <div class="modal-body">
+
+        <h3 class="evidence-cat">Projects</h3>
+        <div class="evidence-grid">
+          <div class="evidence-card">
+            <div class="evidence-img-wrap">
+              <img src="assets/img/project-fyp.jpg" alt="FYP SMS Spam Detection" onerror="this.src='assets/img/placeholder.jpg'" />
+            </div>
+            <div class="evidence-info">
+              <h4>Real-Time SMS Spam Detection App</h4>
+              <p>Android app built with Kotlin &amp; Jetpack Compose integrating a Random Forest ML model (ONNX) with TF-IDF for real-time spam classification.</p>
+              <div class="evidence-tags">
+                <span>Android</span><span>Kotlin</span><span>Machine Learning</span><span>ONNX</span>
+              </div>
+            </div>
+          </div>
+          <div class="evidence-card">
+            <div class="evidence-img-wrap">
+              <img src="assets/img/project-banking.jpg" alt="Banking System" onerror="this.src='assets/img/placeholder.jpg'" />
+            </div>
+            <div class="evidence-info">
+              <h4>Banking System Project</h4>
+              <p>Developed a full banking system with GUI interface and database integration, supporting transactions, account management, and basic security features.</p>
+              <div class="evidence-tags">
+                <span>Java</span><span>SQL</span><span>Database</span>
+              </div>
+            </div>
+          </div>
+          <div class="evidence-card">
+            <div class="evidence-img-wrap">
+              <img src="assets/img/project-iot.jpg" alt="IoT Gym Counter" onerror="this.src='assets/img/placeholder.jpg'" />
+            </div>
+            <div class="evidence-info">
+              <h4>IoT Smart Repetition Counter for Gym</h4>
+              <p>Hardware-software integration using sensors for real-time exercise rep tracking, connected to Blynk app for monitoring via smartphone.</p>
+              <div class="evidence-tags">
+                <span>IoT</span><span>Sensors</span><span>Blynk</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="evidence-cat" style="margin-top:2rem">Courses &amp; Certifications</h3>
+        <div class="certs-list">
+          <div class="cert-item">
+            <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+            <div class="cert-detail">
+              <strong>Cisco Networking Academy</strong>
+              <span>Basic Networking — IP, Routing, Switching, Network Configuration &amp; Troubleshooting · 2025</span>
+            </div>
+            <div class="cert-status done">Completed</div>
+          </div>
+          <div class="cert-item">
+            <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="cert-detail">
+              <strong>CompTIA Security+</strong>
+              <span>Planned — Target Q4 2025</span>
+            </div>
+            <div class="cert-status planned">Planned</div>
+          </div>
+        </div>
+
+        <h3 class="evidence-cat" style="margin-top:2rem">Awards &amp; Achievements</h3>
+        <div class="awards-list">
+          <div class="award-item"><i class="fas fa-trophy"></i> Pahang National Hackathon Participant — 2019</div>
+          <div class="award-item"><i class="fas fa-gamepad"></i> Game Development Workshop — 2019</div>
+          <div class="award-item"><i class="fas fa-star"></i> Karnival Literasi Falak — 2018</div>
+          <div class="award-item"><i class="fas fa-crown"></i> President, Kadet Koreksional — 2019–2021</div>
+          <div class="award-item"><i class="fas fa-pen"></i> Secretary, English Language Club — 2019–2021</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SECTION: REFLECTION ===== -->
+  <div id="modal-reflection" class="modal-panel">
+    <div class="modal-inner">
+      <button class="modal-close" onclick="closeSection()"><i class="fas fa-times"></i></button>
+      <div class="modal-header">
+        <span class="modal-icon"><i class="fas fa-lightbulb"></i></span>
+        <h2>Personal Reflection</h2>
+        <p class="modal-sub">Dream Company: CyberSecurity Malaysia (CSM)</p>
+      </div>
+      <div class="modal-body">
+        <div class="reflection-logo">
+          <i class="fas fa-building-shield" style="font-size:3rem;color:var(--red)"></i>
+          <div>
+            <strong>CyberSecurity Malaysia (CSM)</strong>
+            <span>Agency under the Ministry of Digital, Malaysia</span>
+          </div>
+        </div>
+
+        <div class="qa-list">
+          <div class="qa-item">
+            <div class="qa-q"><i class="fas fa-heart"></i> Why do I want to work here?</div>
+            <div class="qa-a">CyberSecurity Malaysia is the nation's premier cybersecurity agency — it sits at the intersection of everything I care about: protecting people, strengthening national digital infrastructure, and solving real security challenges at scale. Unlike private firms where security is a cost centre, at CSM it is the entire mission. I want to be where the stakes are highest and the work matters most to the country I call home.</div>
+          </div>
+          <div class="qa-item">
+            <div class="qa-q"><i class="fas fa-gift"></i> What value can I bring?</div>
+            <div class="qa-a">I bring a blend of theoretical foundation and hands-on technical experience — from building a real-time ML-powered spam detection app to conducting digital forensics investigations covering network, memory, and mobile forensics. My FYP demonstrates I can take a security problem, research solutions, and ship a working product. I also bring fresh perspective on applying machine learning to threat detection, which aligns with CSM's evolving threat intelligence capabilities.</div>
+          </div>
+          <div class="qa-item">
+            <div class="qa-q"><i class="fas fa-user-check"></i> Why should you hire me?</div>
+            <div class="qa-a">I am disciplined, self-driven, and genuinely passionate about cybersecurity — not just as a job, but as a responsibility. I have proven I can lead (as President of Kadet Koreksional), manage complexity (coordinating multiple group projects while completing FYP), and produce quality technical work under pressure. I am also humble enough to know my gaps and proactive enough to have a plan to fill them.</div>
+          </div>
+          <div class="qa-item">
+            <div class="qa-q"><i class="fas fa-tools"></i> Skills that make me suitable</div>
+            <div class="qa-a">Network analysis with Wireshark, ethical hacking tools (Kali Linux, NMAP, Burp Suite), digital forensics (FTK, Autopsy), Python scripting, and machine learning application in security contexts. Backed by Cisco Networking Academy certification and a final year project that bridges ML and mobile security.</div>
+          </div>
+          <div class="qa-item">
+            <div class="qa-q"><i class="fas fa-balance-scale"></i> Strengths &amp; Weaknesses</div>
+            <div class="qa-a"><strong>Strengths:</strong> Fast learner, strong integrity, emotional intelligence, and leadership experience. I adapt quickly to new tools and environments.<br><br><strong>Weaknesses:</strong> I sometimes overthink before acting in high-pressure situations. I am actively working on this through time-boxed decision-making and improving my confidence in incident response drills.</div>
+          </div>
+          <div class="qa-item">
+            <div class="qa-q"><i class="fas fa-star"></i> Why would a company choose me?</div>
+            <div class="qa-a">Because I offer more than technical skill — I offer commitment. I chose this specialisation knowing it is demanding, sat in the same seat for six semesters, and built real projects to prove it. I do not just know about security; I have practised it, studied it, and applied it in real assignments. For an organisation like CSM that needs people who take the mission seriously, that track record matters.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
